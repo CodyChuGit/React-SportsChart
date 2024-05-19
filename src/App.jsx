@@ -89,13 +89,13 @@ function App() {
           <tr key={index}>
             <td style={{ textAlign: 'center' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <img src={teamImages[item.home_team]} alt={item.home_team} style={{ width: '48px', height: '48px' }} />
+                <img src={teamImages[item.home_team]} alt={item.home_team} style={{ width: '36px', height: '36px' }} />
                 {item.home_team}
               </div>
             </td>
             <td style={{ textAlign: 'center' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <img src={teamImages[item.away_team]} alt={item.away_team} style={{ width: '48px', height: '48px' }} />
+                <img src={teamImages[item.away_team]} alt={item.away_team} style={{ width: '36px', height: '36px' }} />
                 {item.away_team}
               </div>
             </td>

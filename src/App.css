@@ -4,16 +4,24 @@
   border-spacing: 0;
   overflow: hidden;
   font-family: Arial, sans-serif;
-  background-color: rgb(255, 255, 255, .5); /* Add this line to set the background color */
-  border-radius: 10px; /* Add this line to set the border radius */
-  padding:1em;
+  background-color: rgb(255, 255, 255, .5);
+  border-radius: 4px;
+  padding: 1em;
+  font-size: .8em;
+}
+
+/* Add this media query to set different font sizes based on screen size */
+@media (max-width: 800px) {
+  .spreadsheet {
+    font-size: .5em; /* Set the font size for smaller screens */
+  }
 }
 
 .spreadsheet th, .spreadsheet td {
-  border: 4px solid #ffffff;
-  padding: 16px;
-  border-radius: 10px; /* Add this line to set the border radius */
-  margin: px; /* Add this line to set the border offset */
+  border: 1px solid #ffffff;
+  padding: 8px;
+  border-radius: 4px;
+  margin: px;
 }
 
 .spreadsheet tr:nth-child(even) {
@@ -21,10 +29,11 @@
 }
 
 .spreadsheet th {
-  background-color: #191919;
+  background-color: #000000;
   color: white;
+  height: 3em;
 }
 
 .spreadsheet tr:hover {
-  background-color: #ddd;
+  background-color: #d1fbff54;
 }
