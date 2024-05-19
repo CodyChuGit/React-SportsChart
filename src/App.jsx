@@ -88,14 +88,14 @@ function App() {
         {data && data.map((item, index) => (
           <tr key={index}>
             <td style={{ textAlign: 'center' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
-                <img src={teamImages[item.home_team]} alt={item.home_team} style={{ width: '64px', height: '64px' }} />
-                {item.away_team}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <img src={teamImages[item.home_team]} alt={item.home_team} style={{ width: '48px', height: '48px' }} />
+                {item.home_team}
               </div>
             </td>
             <td style={{ textAlign: 'center' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '32px' }}>
-                <img src={teamImages[item.away_team]} alt={item.away_team} style={{ width: '64px', height: '64px' }} />
+              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+                <img src={teamImages[item.away_team]} alt={item.away_team} style={{ width: '48px', height: '48px' }} />
                 {item.away_team}
               </div>
             </td>
