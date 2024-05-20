@@ -1,4 +1,4 @@
-.spreadsheet {
+.spreadsheet_Points {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
@@ -12,28 +12,28 @@
 
 /* Add this media query to set different font sizes based on screen size */
 @media (max-width: 800px) {
-  .spreadsheet {
+  .spreadsheet_Points {
     font-size: .5em; /* Set the font size for smaller screens */
   }
 }
 
-.spreadsheet th, .spreadsheet td {
+.spreadsheet_Points th, .spreadsheet_Points td {
   border: 1px solid #ffffff;
   padding: 8px;
   border-radius: 4px;
   margin: px;
 }
 
-.spreadsheet tr:nth-child(even) {
+.spreadsheet_Points tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-.spreadsheet th {
+.spreadsheet_Points th {
   background-color: #000000;
   color: white;
   height: 3em;
 }
 
-.spreadsheet tr:hover {
+.spreadsheet_Points tr:hover {
   background-color: #d1fbff54;
 }
