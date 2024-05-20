@@ -57,7 +57,7 @@
   font-weight: bold;
   color: #ffffff;
   width: 100%;
-  min-width: 70px; /* Add a minimum width */
+  min-width: 80px; /* Add a minimum width */
   box-sizing: border-box;
   -webkit-appearance: none;
   text-align: center;
