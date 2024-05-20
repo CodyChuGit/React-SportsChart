@@ -10,13 +10,6 @@
   font-size: .8em;
 }
 
-/* Add this media query to set different font sizes based on screen size */
-@media (max-width: 800px) {
-  .spreadsheet_Small {
-    font-size: .4em; /* Set the font size for smaller screens */
-  }
-}
-
 .spreadsheet_Small th, .spreadsheet_Small td {
   border: 1px solid #ffffff;
   padding: 2px;
@@ -42,10 +35,6 @@
   display: inline-block;
   position: relative;
   overflow: hidden;
-  background-image: url("data:image/svg+xml;utf8,<svg fill=\'%23ffffff\' viewBox=\'0 0 140 140\' width=\'40\' height=\'40\' xmlns=\'http://www.w3.org/2000/svg\'><g><path d=\'M35,45l70,70l70-70H35z\'/></g></svg>");
-  background-position: right .7em top 50%;
-  background-repeat: no-repeat;
-  background-size: .65em auto;
 }
 
 .dropdown-container select {
@@ -53,12 +42,11 @@
   border: none;
   outline: 0;
   padding: 5px;
-  font-size: .5rem;
+  font-size: .8rem;
   font-weight: bold;
   color: #ffffff;
   width: 100%;
   min-width: 80px; /* Add a minimum width */
-  box-sizing: border-box;
   -webkit-appearance: none;
   text-align: center;
   margin-right: 12px; /* Add a spacer to the right */
@@ -68,8 +56,18 @@
   content: "▼";
   position: absolute;
   right: 4px;
-  top: 50%;
+  top: 55%;
   transform: translateY(-50%);
   color: #ffffff;
   pointer-events: none;
+}
+
+/* Add this media query to set different font sizes based on screen size */
+@media (max-width: 800px) {
+  .spreadsheet_Small {
+    font-size: .4rem; /* Set the font size for smaller screens */
+  }
+  .dropdown-container select{
+    font-size: .4rem;
+  }
 }

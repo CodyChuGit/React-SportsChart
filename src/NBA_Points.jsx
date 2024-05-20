@@ -25,13 +25,13 @@ function NBA_Points() {
       <tbody>
         {data && data.map((item, index) => (
           <tr key={index}>
-            <td style={{ textAlign: 'center' }}>
+            <td style={{ textAlign: 'left' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                 <img src={teamImages[item.home_team]} alt={item.home_team} style={{ width: '32px', height: '32px' }} />
                 {item.home_team}
               </div>
             </td>
-            <td style={{ textAlign: 'center' }}>
+            <td style={{ textAlign: 'left' }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                 <img src={teamImages[item.away_team]} alt={item.away_team} style={{ width: '32px', height: '32px' }} />
                 {item.away_team}

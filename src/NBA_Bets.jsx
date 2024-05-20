@@ -49,13 +49,13 @@ function NBA_Bets() {
             (selectedBookmaker === '' || bookmaker.title === selectedBookmaker) && bookmaker.markets.map((market, marketIndex) => (
               market.outcomes.map((outcome, outcomeIndex) => (
                 <tr key={`${index}-${bookmakerIndex}-${marketIndex}-${outcomeIndex}`}>
-                  <td style={{ textAlign: 'center' }}>
+                  <td style={{ textAlign: 'left' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                       <img src={teamImages[item.home_team]} alt={item.home_team} style={{ width: '24px', height: '24px' }} />
                       {item.home_team}
                     </div>
                   </td>
-                  <td style={{ textAlign: 'center' }}>
+                  <td style={{ textAlign: 'left' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                       <img src={teamImages[item.away_team]} alt={item.away_team} style={{ width: '24px', height: '24px' }} />
                       {item.away_team}

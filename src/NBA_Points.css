@@ -13,7 +13,7 @@
 /* Add this media query to set different font sizes based on screen size */
 @media (max-width: 800px) {
   .spreadsheet_Large {
-    font-size: .5em; /* Set the font size for smaller screens */
+    font-size: .65em; /* Set the font size for smaller screens */
   }
 }
 
