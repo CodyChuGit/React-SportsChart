@@ -13,7 +13,7 @@ function NBA_Points() {
   }, [])
 
   return (
-    <table className="spreadsheet_Points">
+    <table className="spreadsheet_Large">
       <thead>
         <tr>
           <th>Home Team</th>

@@ -1,4 +1,4 @@
-.spreadsheet_Bets {
+.spreadsheet_Small {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
@@ -12,28 +12,63 @@
 
 /* Add this media query to set different font sizes based on screen size */
 @media (max-width: 800px) {
-  .spreadsheet_Bets {
-    font-size: .5em; /* Set the font size for smaller screens */
+  .spreadsheet_Small {
+    font-size: .4em; /* Set the font size for smaller screens */
   }
 }
 
-.spreadsheet_Bets th, .spreadsheet_Bets td {
+.spreadsheet_Small th, .spreadsheet_Small td {
   border: 1px solid #ffffff;
   padding: 2px;
   border-radius: 4px;
-  margin: 0px;
 }
 
-.spreadsheet_Bets tr:nth-child(even) {
+.spreadsheet_Small tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-.spreadsheet_Bets th {
+.spreadsheet_Small th {
   background-color: #000000;
   color: white;
-  height: 2em;
+  height: 3em;
 }
 
-.spreadsheet_Bets tr:hover {
+.spreadsheet_Small tr:hover {
   background-color: #d1fbff54;
+}
+
+.dropdown-container {
+  background-color: #000000;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  background-image: url("data:image/svg+xml;utf8,<svg fill=\'%23ffffff\' viewBox=\'0 0 140 140\' width=\'40\' height=\'40\' xmlns=\'http://www.w3.org/2000/svg\'><g><path d=\'M35,45l70,70l70-70H35z\'/></g></svg>");
+  background-position: right .7em top 50%;
+  background-repeat: no-repeat;
+  background-size: .65em auto;
+}
+
+.dropdown-container select {
+  background-color: #000000;
+  border: none;
+  outline: 0;
+  padding: 5px;
+  font-size: .5rem;
+  font-weight: bold;
+  color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  text-align: center;
+  margin-right: 12px; /* Add a spacer to the right */
+}
+
+.dropdown-container::after {
+  content: "▼";
+  position: absolute;
+  right: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  pointer-events: none;
 }
