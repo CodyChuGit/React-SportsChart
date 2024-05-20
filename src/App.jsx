@@ -68,7 +68,7 @@ function App() {
   }
 
   useEffect(() => {
-    fetch('https://api.the-odds-api.com/v4/sports/basketball_nba/scores/?daysFrom=1&apiKey=5288e4212d2a0e03569b5a08d18af5dc')
+    fetch('https://api.the-odds-api.com/v4/sports/basketball_nba/scores/?daysFrom=1&apiKey=f1e3276ebee2f8551da02b315a7a0d7e')
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => console.error('Error:', error))
@@ -88,14 +88,14 @@ function App() {
         {data && data.map((item, index) => (
           <tr key={index}>
             <td style={{ textAlign: 'center' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <img src={teamImages[item.home_team]} alt={item.home_team} style={{ width: '36px', height: '36px' }} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                <img src={teamImages[item.home_team]} alt={item.home_team} style={{ width: '32px', height: '32px' }} />
                 {item.home_team}
               </div>
             </td>
             <td style={{ textAlign: 'center' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                <img src={teamImages[item.away_team]} alt={item.away_team} style={{ width: '36px', height: '36px' }} />
+              <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                <img src={teamImages[item.away_team]} alt={item.away_team} style={{ width: '32px', height: '32px' }} />
                 {item.away_team}
               </div>
             </td>
