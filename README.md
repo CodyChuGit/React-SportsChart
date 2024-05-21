@@ -1,4 +1,4 @@
-Sports Chart:
+React Sports Chart Component:
 
 Created a styled spreadsheet chart to input realtime API sports data from [odds-API](https://the-odds-api.com)
 
